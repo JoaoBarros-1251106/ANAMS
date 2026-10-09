@@ -1,1 +1,2 @@
-
+UC3-Consultar o armário
+O utilizador final inicia a consulta do armário. O sistema devolve o menu para consultar ou adicionar. O utilizador final seleciona consultar. O sistema devolve a lista de peças. O utilizador final seleciona sair. O sistema informa do sucesso da operação.
