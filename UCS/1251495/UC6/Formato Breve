@@ -1,1 +1,5 @@
+Formato breve
 
+O Admin inicia o registo de um novo tipo de ocasião. 
+O sistema solicita o nome, o Admin introduz-o, o sistema apresenta os dados e pede confirmação.
+O Admin confirma e o sistema regista o tipo de ocasião, ficando disponível para os utilizadores o escolherem ao pedir uma sugestão.
