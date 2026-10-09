@@ -1,1 +1,2 @@
-
+UC2-Eliminar uma peça
+O utilizador final inicia a consulta do armário. O sistema devolve o menu para consultar ou adicionar. O utilizador final seleciona consultar. O sistema devolve as peças. O utilizador final seleciona uma peça. O sistema devolve os dados da peça e questiona a remoção. O utilizador final seleciona a remoção. O sistema solicita confirmação. O utilizador final confirma. O sistema informa do sucesso da operação.
