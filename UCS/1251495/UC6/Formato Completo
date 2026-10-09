@@ -1,0 +1,36 @@
+Ator principal: Admin
+
+Partes interessadas e interesses:
+
+Admin: quer definir os tipos de ocasião de forma rápida e sem erros.
+Utilizador: quer ter à escolha tipos de ocasião relevantes para pedir sugestões.
+
+Pré-condições: o Admin está autenticado no sistema.
+
+Pós-condições: o novo tipo de ocasião fica registado e disponível para seleção nas sugestões.
+
+Fluxo principal:
+
+O Admin inicia o registo de um tipo de ocasião.
+1.1. O sistema solicita os dados (nome do tipo de ocasião).
+O Admin introduz os dados solicitados.
+2.1. O sistema apresenta os dados e solicita confirmação.
+O Admin confirma.
+3.1. O sistema regista o tipo de ocasião e informa do sucesso da operação.
+
+Fluxos alternativos:
+
+2a. Nome em falta ou inválido: o sistema informa o erro e solicita novamente os dados (volta ao passo 1.1).
+2b. Já existe um tipo de ocasião com o mesmo nome: o sistema informa o Admin e solicita outro nome (volta ao passo 1.1).
+3a. O Admin cancela: o sistema descarta os dados e o caso de uso termina.
+
+Requisitos especiais: a lista de tipos de ocasião é apresentada ao utilizador por seleção, nunca por texto livre.
+
+Frequência de ocorrência: baixa, só quando é preciso acrescentar um tipo de ocasião novo.
+
+Perguntas em aberto:
+
+O Admin deve poder também editar e eliminar tipos de ocasião, ou apenas registar novos?
+Se um tipo de ocasião já estiver usado em sugestões do histórico, o que acontece ao eliminá-lo?
+Como é que o sistema relaciona um tipo de ocasião com as peças adequadas, se o tipo de ocasião não tem formalidade associada?
+Existe uma lista inicial de tipos de ocasião já carregada no sistema?
