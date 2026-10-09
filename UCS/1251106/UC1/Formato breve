@@ -1,1 +1,3 @@
+UC1-Registar uma peça
+O utilizador final inicia a consulta do armário. O sistema devolve o menu para consultar ou adicionar. O utilizador final seleciona adicionar peça. O sistema solicita os dados. O utilizador final adiciona os dados. O sistema solicita confirmação. O utilizador final confirma. O sistema informa do sucesso da operação.
 
