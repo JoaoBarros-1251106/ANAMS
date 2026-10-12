@@ -1,29 +1,54 @@
 Formato completo
 
-Ator principal: Admin
+Ator principal
 
-Partes interessadas e interesses:
+Admin
 
-Admin: quer ver rapidamente que tipos de peça já existem, para saber o que falta registar.
+Partes interessadas e seus interesses
 
-Pré-condições: o Admin está autenticado no sistema.
+Admin: deseja ver de forma rápida e facilmente visível os tipos de peça existentes.
+Empresa: deseja funcionamento correto, seguro e simples da aplicação.
 
-Pós-condições: nenhuma alteração ao sistema; a lista de tipos de peça é apresentada.
+Pré-condições
 
-Fluxo principal:
+O Admin está identificado e autenticado.
+
+Pós-condições
+
+n/a
+
+Cenário de sucesso principal (ou fluxo básico)
 
 O Admin inicia a consulta de tipos de peça.
-1.1. O sistema apresenta a lista de tipos de peça.
+O sistema mostra a lista de tipos de peça e solicita confirmação.
+O Admin confirma.
+O sistema informa o Admin do sucesso da operação.
 
-Fluxos alternativos:
+Extensões (ou fluxos alternativos)
 
-1a. Ainda não existem tipos de peça registados: o sistema informa o Admin de que a lista está vazia.
+*a. O Admin solicita o cancelamento da operação.
+O caso de uso termina.
 
-Requisitos especiais: a informação é apresentada em lista, não em texto corrido.
+2a. A lista de tipos de peça é vazia.
 
-Frequência de ocorrência: média, sempre que o Admin quer confirmar o que está registado, nomeadamente antes de um novo registo (UC7).
+O sistema alerta o Admin para o facto.
+1a. O caso de uso termina.
 
-Perguntas em aberto:
+Requisitos especiais
 
+n/a
+
+Tecnologia e Lista de Variações dos Dados
+
+n/a
+
+Frequência de Ocorrência
+
+n/a
+
+Questões em aberto
+
+Quais são os valores dos atributos que devem ser visualizados? Todos ou um conjunto previamente selecionado?
+O sistema deve permitir selecionar um tipo de peça em específico e visualizar todos os seus dados?
 Os utilizadores comuns também precisam de consultar esta lista fora do registo de peças, ou é só o Admin?
-A lista deve ter ordenação por defeito (alfabética, mais recentes primeiro)?
+Qual é a frequência de ocorrência deste caso de uso?
