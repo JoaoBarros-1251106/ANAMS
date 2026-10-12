@@ -1,4 +1,5 @@
 Formato breve
 
-O Admin inicia a consulta dos tipos de peça. 
-O sistema apresenta a lista de todos os tipos de peça registados.
+O Admin inicia a consulta dos tipos de peça. O sistema mostra a lista de tipos de peça registados e solicita confirmação. 
+O Admin confirma. 
+O sistema informa o Admin do sucesso da operação.
