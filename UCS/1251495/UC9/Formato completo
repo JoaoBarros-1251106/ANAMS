@@ -1,0 +1,29 @@
+Formato completo
+
+Ator principal: Admin
+
+Partes interessadas e interesses:
+
+Admin: quer ver rapidamente que tipos de peça já existem, para saber o que falta registar.
+
+Pré-condições: o Admin está autenticado no sistema.
+
+Pós-condições: nenhuma alteração ao sistema; a lista de tipos de peça é apresentada.
+
+Fluxo principal:
+
+O Admin inicia a consulta de tipos de peça.
+1.1. O sistema apresenta a lista de tipos de peça.
+
+Fluxos alternativos:
+
+1a. Ainda não existem tipos de peça registados: o sistema informa o Admin de que a lista está vazia.
+
+Requisitos especiais: a informação é apresentada em lista, não em texto corrido.
+
+Frequência de ocorrência: média, sempre que o Admin quer confirmar o que está registado, nomeadamente antes de um novo registo (UC7).
+
+Perguntas em aberto:
+
+Os utilizadores comuns também precisam de consultar esta lista fora do registo de peças, ou é só o Admin?
+A lista deve ter ordenação por defeito (alfabética, mais recentes primeiro)?
