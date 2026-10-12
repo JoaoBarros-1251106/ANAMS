@@ -1,3 +1,4 @@
 Formato breve
-
-O Admin inicia a consulta dos tipos de ocasião. O sistema apresenta a lista de todos os tipos de ocasião registados.
+O Admin inicia a consulta dos tipos de ocasião. 
+O sistema mostra a lista de tipos de ocasião registados e solicita confirmação.
+O Admin confirma. O sistema informa o Admin do sucesso da operação.
