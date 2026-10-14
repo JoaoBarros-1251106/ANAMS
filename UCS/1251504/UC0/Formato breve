@@ -1,6 +1,6 @@
 O utilizador inicia o registo de uma nova conta. 
 O sistema solicita os dados necessários. 
-O utilizador introduz os dados solicitados. 
+O utilizador introduz os dados solicitados(nome e password). 
 O sistema valida os dados introduzidos e apresenta os dados, solicitando confirmação. 
 O utilizador confirma. 
 O sistema guarda/regista os dados da conta e informa o utilizador do sucesso da operação.
