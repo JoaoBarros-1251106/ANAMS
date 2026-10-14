@@ -1,1 +1,6 @@
-
+O utilizador inicia a edição da sua conta. 
+O sistema apresenta os dados atuais da conta e solicita ao utilizador que indique os dados que pretende alterar. 
+O utilizador introduz os novos dados. 
+O sistema valida os dados introduzidos e apresenta os dados atualizados, solicitando confirmação. 
+O utilizador confirma as alterações. 
+O sistema guarda as alterações e informa o utilizador do sucesso da operação.
