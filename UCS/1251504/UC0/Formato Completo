@@ -1,0 +1,52 @@
+Formato completo
+Ator Principal
+- Utilizador.
+Partes interessadas e seus interesses
+- Utilizador: pretende que a criação da conta seja simples, rápida e segura.
+- Assistente Digital de Vestuário: pretende garantir que as contas são criadas corretamente e que os dados dos utilizadores são devidamente registados.
+Pré-Condições:
+- N/A
+Pós-condições:
+- A informação da conta do utilizador é guardada/registada no sistema.
+Cenário de sucesso principal:
+1. O utilizador inicia o processo de criação de uma conta.
+2. O sistema solicita os dados necessários para a criação da conta.
+3. O utilizador introduz os dados solicitados.
+4. O sistema valida os dados introduzidos.
+5. O sistema apresenta os dados introduzidos e solicita confirmação.
+6. O utilizador confirma a criação da conta.
+7. O sistema guarda/regista os dados da conta.
+8. O sistema informa o utilizador do sucesso da operação.
+
+Extensões / Fluxos alternativos:
+*a – O utilizador solicita o cancelamento da operação.
+1. O caso de uso termina.
+4a – Dados mínimos obrigatórios em falta.
+1. O sistema informa quais os dados em falta.
+2. O sistema permite a introdução dos dados em falta.
+3. O utilizador introduz os dados em falta.
+4. O fluxo retoma no passo 4.
+4b – O sistema deteta que os dados introduzidos já existem no sistema.
+1. O sistema informa o utilizador de que os dados já existem.
+2. O sistema permite a alteração dos dados.
+3. O utilizador altera os dados.
+4. O fluxo retoma no passo 4.
+4c – O sistema deteta que os dados introduzidos são inválidos.
+1. O sistema informa o utilizador dos dados inválidos.
+2. O sistema permite a alteração dos dados.
+3. O utilizador altera os dados.
+4. O fluxo retoma no passo 4.
+    
+Requisitos especiais
+- N/A
+Tecnologia e Lista de Variações dos Dados
+- N/A
+Frequência de Ocorrência
+- A determinar.
+Questões em aberto
+- Quais são os dados obrigatórios para a criação de uma conta?
+- O endereço de email deve ser único?
+- Como deve ser definida a palavra-passe?
+- É necessário confirmar o endereço de email?
+- Existem diferentes tipos de utilizador?
+- Que informações sobre as preferências do utilizador devem ser recolhidas durante o registo?
