@@ -1,0 +1,71 @@
+Ator Principal-Utilizador.
+
+Partes interessadas e seus interesses:
+
+Utilizador: pretende alterar os seus dados de forma simples, rápida e segura.
+Assistente Digital de Vestuário: pretende manter os dados da conta atualizados e válidos.
+
+Pré-Condições:
+
+O utilizador possui uma conta registada.
+O utilizador encontra-se autenticado no sistema.
+
+Pós-Condições
+
+Os dados alterados pelo utilizador encontram-se atualizados e guardados na sua conta.
+Cenário de sucesso principal
+O utilizador inicia a edição da sua conta.
+O sistema apresenta os dados atuais da conta.
+O sistema solicita ao utilizador os dados que pretende alterar.
+O utilizador introduz os novos dados.
+O sistema valida os dados introduzidos.
+O sistema apresenta os dados atualizados e solicita confirmação.
+O utilizador confirma as alterações.
+O sistema guarda as alterações na conta.
+O sistema informa o utilizador de que a conta foi atualizada com sucesso.
+
+Extensões
+
+1a. O utilizador cancela a operação
+
+O sistema cancela a edição.
+O sistema mantém os dados originais da conta.
+
+5a. Existem dados inválidos
+
+O sistema informa o utilizador dos dados inválidos.
+O utilizador corrige os dados.
+O sistema volta a validar os dados.
+
+5b. Os dados introduzidos não podem ser utilizados
+
+O sistema informa o utilizador do problema.
+O utilizador introduz novos dados.
+O sistema volta a validar os dados.
+
+7a. O utilizador não confirma as alterações
+
+O sistema cancela a atualização.
+Os dados originais da conta permanecem inalterados.
+
+Requisitos especiais
+
+Os dados da conta devem ser atualizados de forma segura.
+Os dados introduzidos devem ser validados antes de serem guardados.
+
+Tecnologia e Lista de Variações dos Dados
+
+Os dados podem ser introduzidos através de uma interface gráfica ou de uma interface de texto.
+Os campos disponíveis para edição devem ser definidos e validados com o cliente.
+
+Frequência de Ocorrência
+
+A determinar.
+
+Questões em aberto
+
+Quais são exatamente os dados que o utilizador pode editar?
+É necessário confirmar a palavra-passe atual para a alterar?
+É necessário confirmar o novo email?
+
+Existem dados que não podem ser alterados pelo utilizador?
