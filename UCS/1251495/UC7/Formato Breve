@@ -1,5 +1,5 @@
 Formato breve
 
-O Admin inicia o registo de um tipo de peça. 
-O sistema solicita o nome, o Admin introduz-o e o sistema apresenta os dados e pede confirmação.
-O Admin confirma e o sistema regista o tipo de peça e informa do sucesso da operação.
+O Admin inicia o registo de um tipo de vestuário. 
+O sistema solicita a sigla e a descrição, o Admin introduz-o e o sistema apresenta os dados e pede confirmação.
+O Admin confirma e o sistema regista o tipo de vestuário e informa do sucesso da operação.
