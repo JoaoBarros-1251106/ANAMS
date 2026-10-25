@@ -44,14 +44,34 @@ public class MenuInicial_UI
             else
             if( opcao.equals("2") )
             {
-                MenuAdm_UI ui = new MenuAdm_UI(assistente);
-                ui.run();
+                String utilizador = Utils.readLineFromConsole("Utilizador: ");
+                String password = Utils.readLineFromConsole("Palavra-passe: ");
+
+                if (assistente.autenticarAdmin(utilizador, password))
+                {
+                    MenuAdm_UI ui = new MenuAdm_UI(assistente);
+                    ui.run();
+                }
+                else
+                {
+                    System.out.println("Credenciais de administrador incorretas.");
+                }
             }
             else
             if( opcao.equals("3") )
             {
-                MenuUTF_UI ui = new MenuUTF_UI(assistente);
-                ui.run();
+                String email = Utils.readLineFromConsole("Email: ");
+                String password = Utils.readLineFromConsole("Palavra-passe: ");
+
+                if (assistente.autenticar(email, password))
+                {
+                    MenuUTF_UI ui = new MenuUTF_UI(assistente);
+                    ui.run();
+                }
+                else
+                {
+                    System.out.println("Email ou palavra-passe incorretos. Se ainda não tem conta, escolha a opção 1 (Utilizador não registado) e faça o registo.");
+                }
             }
         }
         while (!opcao.equals("0") );
