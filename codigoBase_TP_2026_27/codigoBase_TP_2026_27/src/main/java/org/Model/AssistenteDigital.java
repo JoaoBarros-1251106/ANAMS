@@ -17,8 +17,12 @@ import java.util.List;
  */
 public class AssistenteDigital
 {
-    // Completar/Adaptar
+
     private final List<Vestuario> lstTiposVestuario;
+    private final List<PecaVestuario> lstVestuarios;
+    private List<Vestuario> listaVestuarios;
+    private Vestuario vestuarioEmCriacao;
+    private int proximoIdPeca = 1;
 
     /**
      * Lista dos utilizadores finais (UtF) com conta criada.
@@ -28,6 +32,7 @@ public class AssistenteDigital
     public AssistenteDigital()
     {
         this.lstTiposVestuario = new ArrayList<>();
+        this.lstVestuarios = new ArrayList<>();
         this.lstUtilizadoresFinais = new ArrayList<>();
     }
 
@@ -177,7 +182,61 @@ public class AssistenteDigital
     {
         return lstUtilizadoresFinais.contains(utf) && this.valida(utf);
     }
+    //-------------------------------
+    // UC1 - Registar vestuário
 
+    public PecaVestuario novoVestuario()
+    {
+        return new PecaVestuario();
+    }
+    public boolean registaVestuario(PecaVestuario v)
+    {
+        if (this.valida(v))
+        {
+            adicionaVestuario(v);
+            return true;
+        }
+        return false;
+    }
+    private void adicionaVestuario(PecaVestuario v)
+    {
+        lstVestuarios.add(v);
+    }
+    // Validação global
+    public boolean valida(PecaVestuario v)
+    {
+        return v.valida();
+    }
+
+    // UC2, UC3 e UC4 - Listar, procurar e remover vestuários
+
+    public String obterVestuariosAsString()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Listagem de vestuários\n");
+        for (PecaVestuario v : lstVestuarios)
+        {
+            sb.append(v.toString());
+        }
+        return sb.toString();
+    }
+    public PecaVestuario getVestuario(int id)
+    {
+        for (PecaVestuario v : lstVestuarios)
+        {
+            if (v.getIdPeca() == id)
+            {
+                return v;
+            }
+        }
+        return null;
+    }
+    public boolean removeVestuario(PecaVestuario v)
+    {
+        return lstVestuarios.remove(v);
+    }
+
+    //------------------------------------------------
     // Completar com outras funcionalidades
 
     public String toString(){
@@ -195,5 +254,6 @@ public class AssistenteDigital
         }
         return sb.toString();
     }
+
 }
     
