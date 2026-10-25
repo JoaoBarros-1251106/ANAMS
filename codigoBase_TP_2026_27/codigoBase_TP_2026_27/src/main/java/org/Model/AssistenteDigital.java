@@ -216,6 +216,19 @@ public class AssistenteDigital
         lstVestuarios.add(v);
     }
     // Validação global
+
+    public Vestuario getTipoVestuario(String sigla)
+    {
+        for (Vestuario v : lstTiposVestuario)
+        {
+            if (v.getSigla().equalsIgnoreCase(sigla.trim()))
+            {
+                return v;
+            }
+        }
+        return null;
+    }
+
     public boolean valida(PecaVestuario v)
     {
         return v.valida();
