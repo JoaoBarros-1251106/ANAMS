@@ -304,6 +304,18 @@ public class AssistenteDigital
         return false;
     }
 
+    public Ocasiao getOcasiao(String sigla)
+    {
+        for (Ocasiao o : lstTiposOcasiao)
+        {
+            if (o.getSigla().equalsIgnoreCase(sigla.trim()))
+            {
+                return o;
+            }
+        }
+        return null;
+    }
+
     public String obterOcasioesAsString()
     {
         StringBuilder sb = new StringBuilder();
