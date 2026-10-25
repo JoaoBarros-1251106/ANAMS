@@ -24,6 +24,8 @@ public class AssistenteDigital
     private List<Vestuario> listaVestuarios;
     private Vestuario vestuarioEmCriacao;
     private int proximoIdPeca = 1;
+    private static final String ADMIN_UTILIZADOR = "admin";
+    private static final String ADMIN_PASSWORD = "admin123";
 
     /**
      * Lista dos utilizadores finais (UtF) com conta criada.
@@ -195,6 +197,22 @@ public class AssistenteDigital
     {
         return lstUtilizadoresFinais.contains(utf) && this.valida(utf);
     }
+
+    public boolean autenticar(String email, String password)
+    {
+        UtilizadorFinal utf = obterUtilizadorFinalByEmail(email);
+        return utf != null && utf.getPassword().equals(password);
+    }
+
+    //ADMIN_UTILIZADOR = "admin";
+    //ADMIN_PASSWORD = "admin123";
+
+    public boolean autenticarAdmin(String utilizador, String password)
+    {
+        return ADMIN_UTILIZADOR.equals(utilizador) && ADMIN_PASSWORD.equals(password);
+    }
+
+
     //-------------------------------
     // UC1 - Registar vestuário
 

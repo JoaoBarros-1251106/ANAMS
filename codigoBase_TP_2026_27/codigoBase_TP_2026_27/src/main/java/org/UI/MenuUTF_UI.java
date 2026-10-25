@@ -11,6 +11,8 @@ import org.Utils.*;
  */
 public class MenuUTF_UI
 {
+
+
     private AssistenteDigital assistente;
     private String opcao;
 
@@ -19,6 +21,8 @@ public class MenuUTF_UI
         this.assistente = assistente;
     }
     public void run() throws IOException
+
+
     {
         do
         {  // Completar/Adaptar
