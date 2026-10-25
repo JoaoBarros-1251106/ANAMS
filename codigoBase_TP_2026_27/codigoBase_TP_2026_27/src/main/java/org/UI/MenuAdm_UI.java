@@ -29,8 +29,9 @@ public class MenuAdm_UI
         {   // Completar/Adaptar
             System.out.println("###### MENU #####\n\n");
             System.out.println("1. Especificar tipo de vestuário");
-            System.out.println("2. .......");
+            System.out.println("2. Registar tipo de ocasião");
             System.out.println("3. Consultar todos os tipos de vestuário");
+            System.out.println("4. Consultar tipos de ocasião");
             System.out.println("0. Voltar");
 
             opcao = Utils.readLineFromConsole("Escolha uma opção: ");
@@ -41,15 +42,23 @@ public class MenuAdm_UI
                 ui.run();
             }
             else
+
             if( opcao.equals("2") )
             {
-                // Completar
-                System.out.println("Selecionou a opção 2");
+                EspecificarOcasiao_UI ui = new EspecificarOcasiao_UI(assistente);
+                ui.run();
+
             }
             else
             if( opcao.equals("3") )
             {
                 ConsultarTiposVestuario_UI ui = new ConsultarTiposVestuario_UI(assistente);
+                ui.run();
+            }
+            else
+            if( opcao.equals("4") )
+            {
+                ConsultarOcasioes_UI ui = new ConsultarOcasioes_UI(assistente);
                 ui.run();
             }
         }

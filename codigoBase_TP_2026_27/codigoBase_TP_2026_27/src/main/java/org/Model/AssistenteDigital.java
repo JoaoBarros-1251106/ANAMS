@@ -19,6 +19,7 @@ public class AssistenteDigital
 {
 
     private final List<Vestuario> lstTiposVestuario;
+    private final List<Ocasiao> lstTiposOcasiao;
     private final List<PecaVestuario> lstVestuarios;
     private List<Vestuario> listaVestuarios;
     private Vestuario vestuarioEmCriacao;
@@ -32,6 +33,7 @@ public class AssistenteDigital
     public AssistenteDigital()
     {
         this.lstTiposVestuario = new ArrayList<>();
+        this.lstTiposOcasiao = new ArrayList<>();
         this.lstVestuarios = new ArrayList<>();
         this.lstUtilizadoresFinais = new ArrayList<>();
     }
@@ -50,6 +52,18 @@ public class AssistenteDigital
         return false;
     }
 
+    private boolean existeSiglaVestuario(String sigla)
+    {
+        for (Vestuario v : lstTiposVestuario)
+        {
+            if (v.getSigla().equalsIgnoreCase(sigla.trim()))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     private void adicionarTipoVestuario(Vestuario vestuario){
         lstTiposVestuario.add(vestuario);
     }
@@ -57,10 +71,9 @@ public class AssistenteDigital
     public boolean valida(Vestuario vestuario)
     {
         boolean resp = false;
-        if (vestuario.valida())
+        if (vestuario.valida() && !existeSiglaVestuario(vestuario.getSigla()))
         {
-            // Completar
-            //
+
             resp = true;
         }
         return resp;
@@ -251,6 +264,53 @@ public class AssistenteDigital
         sb.append("Listagem de tipos de vestuário\n");
         for(Vestuario v: lstTiposVestuario){
             sb.append(v.toString());
+        }
+        return sb.toString();
+    }
+    public Ocasiao novaOcasiao()
+    {
+        return new Ocasiao();
+    }
+
+    public boolean especificarOcasiao(Ocasiao ocasiao)
+    {
+        if (this.valida(ocasiao))
+        {
+            adicionarOcasiao(ocasiao);
+            return true;
+        }
+        return false;
+    }
+
+    private void adicionarOcasiao(Ocasiao ocasiao)
+    {
+        lstTiposOcasiao.add(ocasiao);
+    }
+
+    public boolean valida(Ocasiao ocasiao)
+    {
+        return ocasiao.valida() && !existeSiglaOcasiao(ocasiao.getSigla());
+    }
+
+    private boolean existeSiglaOcasiao(String sigla)
+    {
+        for (Ocasiao o : lstTiposOcasiao)
+        {
+            if (o.getSigla().equalsIgnoreCase(sigla.trim()))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public String obterOcasioesAsString()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Listagem de tipos de ocasião\n");
+        for (Ocasiao o : lstTiposOcasiao)
+        {
+            sb.append(o.toString()).append("\n");
         }
         return sb.toString();
     }
